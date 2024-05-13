@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Catrachopizza</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-card>
+  <ion-img
+    [src]="'C:\Users\fabio\OneDrive - Universidad Tecnologica Centroamericana\Desarrollo Móvil 2\catracho-pizzas-repo\catracho-pizzas-app\src\assets\depositphotos_13448802-stock-photo-pepperoni-pizza-on-a-white.jpg'"></ion-img>
+  <ion-card-header>
+    <ion-card-title>{{ 'Pizza Pepperoni' }}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <p>Es una pizza de gran tamano, inspirada al estilo de New York de pepperoni y queso mozarella.</p>
+    <ion-button (click)="decreaseQuantity()">-</ion-button>
+    <span>{{ quantity }}</span>
+    <ion-button (click)="increaseQuantity()">+</ion-button>
+    <ion-button (click)="order()">Ordenar</ion-button>
+  </ion-card-content>
+</ion-card>
